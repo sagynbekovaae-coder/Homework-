@@ -1,0 +1,27 @@
+let customer1 = "Nasirdin";
+let customer2 = "Askar";
+
+let price1 = 120;
+let quantity1 = 4;
+
+
+let price2 = 200;
+let quantity2 = 2;
+
+let total1 = price1 * quantity1;
+let total2 = price2 * quantity2;
+let num = 5;
+let difference = Math.abs(total1 - total2);
+
+console.log(${customer1} должен заплатить ${total1});
+console.log(${customer2} должен заплатить ${total2});
+
+if (total1 > total2) {
+    console.log(${customer1} потратил больше на ${total1 - total2}.);
+} else if (total2 > total1) {
+    console.log(${customer2} потратил больше на ${total2 - total1}.);
+} else {
+    console.log(${customer1} и ${customer2} потратили одинаково.);
+}
+
+console.log(Разница, умноженная на ${num}: ${difference * num});
